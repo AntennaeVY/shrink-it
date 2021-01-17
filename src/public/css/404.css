@@ -1,0 +1,22 @@
+* {
+  font-family: Montserrat;
+}
+
+html {
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-image: url(/images/svgexport-1.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  color: #3c1361;
+}

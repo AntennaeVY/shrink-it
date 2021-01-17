@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="/css/index.css")
+    link(rel="preconnect", href="https://fonts.gstatic.com") 
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap", rel="stylesheet")
+    title Shrink It ! - A simple url shortener
+  body
+    .container
+      h1 Shrink It !
+      h4 a simple url shortener
+      form(action="/shrinkit", method='POST')
+        input(type="text", name="name", placeholder='Name', required)
+        input(type="url", name="userUrl", placeholder='URL', required)
+        input(type="submit", value="Shrink!") 
+      
+      table.content-table
+        thead
+          tr
+            td Name
+            td URL
+            td Short URL
+            td Clicks
+        tbody
+          each url in allurls
+            tr
+              td= url.name
+              td 
+                a(href=url.userUrl, target='_blank')= url.userUrl
+              td
+                a(href=`urls/${url.shortUrl}`, target='_blank', onclick="document.location.reload()")= url.shortUrl
+              td= url.clicks

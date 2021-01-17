@@ -1,0 +1,129 @@
+* {
+  font-family: Montserrat;
+}
+
+html {
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-image: url(/images/svgexport-1.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #3c1361;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0px auto;
+  text-align: center;
+}
+
+h4 {
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 1px;
+}
+
+form {
+  margin: 20px auto;
+}
+
+form input[type="text"],
+form input[type="url"] {
+  border-radius: 99px;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  margin: 10px;
+  transition: all ease 0.5s;
+}
+
+form input[type="text"]:focus,
+form input[type="url"]:focus {
+  border: 1px solid #00ab66;
+  outline: none;
+  transition: all ease 0.5s;
+}
+
+form input[type="submit"] {
+  display: block;
+  margin: 10px auto auto auto;
+  color: white;
+  background-color: #00ab66;
+  border: 1px solid #eeeeee;
+  border-radius: 99px;
+  padding: 5px 20px;
+  font-size: 1em;
+  transition: all ease 0.5s;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all ease 0.5s;
+}
+
+.content-table {
+  border-collapse: collapse;
+  text-align: left;
+  margin: 25px 100px;
+  font-size: 0.9em;
+}
+
+.content-table thead tr {
+  background-color: #3c1361;
+  border: 1px solid #3c1361;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 15px;
+  max-width: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.content-table tbody {
+  border: 1px solid #dddddd;
+}
+
+.content-table tbody tr {
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+@media only screen and (max-width: 800px) {
+  input[type="text"],
+  input[type="url"] {
+    display: block;
+  }
+
+  .content-table {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
