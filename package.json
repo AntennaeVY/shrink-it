@@ -15,10 +15,10 @@
     "mongoose": "^5.11.10",
     "dotenv": "^8.2.0",
     "pug": "^3.0.0",
-    "shortid": "^2.2.16"
+    "shortid": "^2.2.16",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
   }
 }
